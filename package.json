@@ -1,0 +1,21 @@
+{
+  "name": "tailwind-to-do-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify ./src/index.js -o ./public/bundle.js",
+    "watch": "watchify ./src/index.js -o ./public/bundle.js",
+    "css": "npx tailwindcss -i ./src/styles.css -o ./public/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "watchify": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
